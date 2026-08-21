@@ -1,6 +1,6 @@
 # kwakdoo8
 
-`kwakdoo8` is a custom black-and-white cat Pet for the ChatGPT/Codex desktop app, modeled after 곽두팔 (두팔).
+`kwakdoo8` is a custom black-and-white cat Pet for the ChatGPT/Codex desktop app, modeled after 곽두팔 (두팔, [@kwakdoo8](https://www.instagram.com/kwakdoo8/)).
 
 The public repository contains only the distributable Pet package, versioning metadata, and installation documentation. Private source photos, personal workspace notes, and rejected generation artifacts are intentionally excluded.
 
@@ -22,7 +22,7 @@ cd kwakdoo8
 ./scripts/install.sh
 ```
 
-Restart or refresh the desktop app, then select `두팔` from the Pet list.
+Restart or refresh the desktop app, then select `Doopal` from the Pet list.
 
 ## Install or roll back to a specific version
 
@@ -30,28 +30,31 @@ Every released package is immutable under `versions/`. Reinstalling an older ver
 
 ```bash
 ./scripts/list-versions.sh
-./scripts/install.sh v1.0.0
+./scripts/install.sh v2.0.0
+./scripts/install.sh v1.0.0 # roll back to the previous identity
 ```
 
 Before overwriting the active package, the installer saves it under:
 
 ```text
-~/.codex/pets/.dupal-backups/<timestamp>/
+~/.codex/pets/.<pet-id>-backups/<timestamp>/
 ```
 
-Git tags and GitHub Releases use the same semantic version, such as `v1.0.0`.
+When switching between v1 and v2, it also moves the replaced `dupal` or `doopal` directory into the matching backup directory. Git tags and GitHub Releases use the same semantic version, such as `v2.0.0`.
 
 ## Current release
 
-- Version: `v1.0.0`
-- Pet ID: `dupal`
-- Display name: `두팔`
+- Version: `v2.0.0`
+- Pet ID: `doopal`
+- Display name: `Doopal`
 - Sprite contract: v2
 - Atlas: 8 columns × 11 rows
 - Cell: 192 × 208 px
 - Full spritesheet: 1536 × 2288 px
 - Format: transparent WebP
-- SHA-256: `022203d0e0c30a7896e3b985250e681efa6f62f70b9c57ba281c9c722f2d9f8e`
+- SHA-256: `632b8ac5af73f3d51e92c65da5fa291ab7cf318dd0d953dac9aa3af48f1a9f08`
+
+`v2.0.0` is a breaking identity release: the Pet ID changed from `dupal` to `doopal`. The installer handles that migration and keeps the displaced package recoverable. The visual update stabilizes cursor-facing frames, removes the magenta edge residue, replaces the awkward one-paw processing pose, and keeps the smoother jump at the same apparent scale as idle.
 
 See [the state map](docs/STATE-MAP.md) for the animation semantics and [the asset specification](docs/ASSET-SPEC.md) for the row contract.
 

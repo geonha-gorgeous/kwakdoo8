@@ -1,0 +1,17 @@
+{
+  "version": "v2.0.0",
+  "releasedAt": "2026-08-21",
+  "petId": "doopal",
+  "displayName": "Doopal",
+  "spriteVersionNumber": 2,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 2288,
+    "format": "webp"
+  },
+  "spritesheetSha256": "632b8ac5af73f3d51e92c65da5fa291ab7cf318dd0d953dac9aa3af48f1a9f08"
+}

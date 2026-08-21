@@ -13,9 +13,9 @@
 Each version directory contains a complete installable package:
 
 ```text
-versions/<version>/dupal/
+versions/<version>/<pet-id>/
 ├── pet.json
 └── spritesheet.webp
 ```
 
-The package directory name and `pet.json` ID remain `dupal` across compatible revisions so a rollback replaces the same Pet entry.
+The package directory name matches the `pet.json` ID. It is `dupal` in v1 and `doopal` from v2 onward. The v2 identity change is intentionally breaking; compatible revisions after v2 keep `doopal` stable.
