@@ -1,0 +1,17 @@
+{
+  "version": "v1.0.0",
+  "releasedAt": "2026-08-21",
+  "petId": "dupal",
+  "displayName": "두팔",
+  "spriteVersionNumber": 2,
+  "atlas": {
+    "columns": 8,
+    "rows": 11,
+    "cellWidth": 192,
+    "cellHeight": 208,
+    "width": 1536,
+    "height": 2288,
+    "format": "webp"
+  },
+  "spritesheetSha256": "022203d0e0c30a7896e3b985250e681efa6f62f70b9c57ba281c9c722f2d9f8e"
+}
