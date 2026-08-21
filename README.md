@@ -30,7 +30,8 @@ Every released package is immutable under `versions/`. Reinstalling an older ver
 
 ```bash
 ./scripts/list-versions.sh
-./scripts/install.sh v2.0.0
+./scripts/install.sh v2.1.0
+./scripts/install.sh v2.0.0 # roll back to the previous motion set
 ./scripts/install.sh v1.0.0 # roll back to the previous identity
 ```
 
@@ -44,7 +45,7 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 
 ## Current release
 
-- Version: `v2.0.0`
+- Version: `v2.1.0`
 - Pet ID: `doopal`
 - Display name: `Doopal`
 - Sprite contract: v2
@@ -52,9 +53,9 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 - Cell: 192 × 208 px
 - Full spritesheet: 1536 × 2288 px
 - Format: transparent WebP
-- SHA-256: `632b8ac5af73f3d51e92c65da5fa291ab7cf318dd0d953dac9aa3af48f1a9f08`
+- SHA-256: `fe7fd8f267bf83fcd5c9b2da6c61fa79c9489f446fbbe3c0016160afe1474138`
 
-`v2.0.0` is a breaking identity release: the Pet ID changed from `dupal` to `doopal`. The installer handles that migration and keeps the displaced package recoverable. The visual update stabilizes cursor-facing frames, removes the magenta edge residue, replaces the awkward one-paw processing pose, and keeps the smoother jump at the same apparent scale as idle.
+`v2.1.0` keeps the stable `doopal` identity and v2 sprite contract. Hover now plays a seated yawn that starts and ends on the exact idle frame. Cursor dragging uses a compact, hand-free scruff-pickup pose for both directions, with a shared neutral start and stable body proportions. All other state and look-direction pixels remain unchanged from `v2.0.0`.
 
 See [the state map](docs/STATE-MAP.md) for the animation semantics and [the asset specification](docs/ASSET-SPEC.md) for the row contract.
 
