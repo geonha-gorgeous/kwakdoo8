@@ -2,6 +2,19 @@
 
 All notable changes to the public Pet package are recorded here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [2.1.0] - 2026-08-21
+
+### Changed
+
+- Replaced the hover jump with a seated yawn that starts and ends on the exact idle frame.
+- Replaced left/right drag movement with a compact, hand-free scruff-pickup pose.
+- Kept the Pet ID, sprite contract, and all unaffected state and look-direction pixels unchanged from `v2.0.0`.
+
+### Fixed
+
+- Matched left and right drag animations to the same neutral pickup frame.
+- Stabilized body proportions and placement across the new drag and hover sequences.
+
 ## [2.0.0] - 2026-08-21
 
 ### Changed
