@@ -59,6 +59,16 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 
 See [the state map](docs/STATE-MAP.md) for the animation semantics and [the asset specification](docs/ASSET-SPEC.md) for the row contract.
 
+## Standalone app
+
+The desktop app picks the animation row from task state, so a machine that rarely runs Codex only ever sees `idle`. `Doopal.app` reads the same installed spritesheet and plays one random motion every few minutes, drawn evenly from every non-idle row.
+
+```bash
+./tools/doopal-solo/install-app.sh
+```
+
+It is a tool rather than part of the published package. See [the standalone app](docs/SOLO-APP.md).
+
 ## Development and releases
 
 Released directories are immutable. A visual revision gets a new semantic version and Git tag, so an experiment can always be undone by reinstalling the previous version. See [CONTRIBUTING.md](CONTRIBUTING.md).
