@@ -28,6 +28,10 @@ When the pointer enters the Pet, the app temporarily selects `jumping`. When the
 
 This behavior was verified against the installed desktop app build on 2026-08-21. It is controlled by the app rather than `pet.json`, so future app releases may change it.
 
+## Processing transition
+
+At session start, the app changes from `idle` to row `running`. In `v2.2.0`, the first and last processing frames are the exact cleaned idle frame, and every active frame keeps the same `198 px` visible height, `y=202` baseline, and `x=95–96` center. The calm left/right head-turn motion remains, without the previous apparent body or head shrink.
+
 ## Drag transition
 
-Rows `running-right` and `running-left` are selected while the Pet is dragged. In `v2.1.0`, both directions begin from the same neutral, cursor-implied pickup frame before the body hangs and sways toward the drag direction. No human hand or cursor graphic is baked into the spritesheet.
+Rows `running-right` and `running-left` are selected while the Pet is dragged. In `v2.2.0`, Doopal hangs in the approved longer, naturally stretched scruff-pickup pose. His gaze matches the cursor direction: screen-right drag looks right and screen-left drag looks left. No human hand or cursor graphic is baked into the spritesheet.
