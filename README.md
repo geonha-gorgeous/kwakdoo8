@@ -30,8 +30,9 @@ Every released package is immutable under `versions/`. Reinstalling an older ver
 
 ```bash
 ./scripts/list-versions.sh
+./scripts/install.sh v2.2.0
 ./scripts/install.sh v2.1.0
-./scripts/install.sh v2.0.0 # roll back to the previous motion set
+./scripts/install.sh v2.0.0 # roll back to the pre-yawn motion set
 ./scripts/install.sh v1.0.0 # roll back to the previous identity
 ```
 
@@ -45,7 +46,7 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 
 ## Current release
 
-- Version: `v2.1.0`
+- Version: `v2.2.0`
 - Pet ID: `doopal`
 - Display name: `Doopal`
 - Sprite contract: v2
@@ -53,9 +54,9 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 - Cell: 192 × 208 px
 - Full spritesheet: 1536 × 2288 px
 - Format: transparent WebP
-- SHA-256: `fe7fd8f267bf83fcd5c9b2da6c61fa79c9489f446fbbe3c0016160afe1474138`
+- SHA-256: `6b4740993a30523f0a3aae3255e96a62545b35c97c388cc4d642338b785cf9eb`
 
-`v2.1.0` keeps the stable `doopal` identity and v2 sprite contract. Hover now plays a seated yawn that starts and ends on the exact idle frame. Cursor dragging uses a compact, hand-free scruff-pickup pose for both directions, with a shared neutral start and stable body proportions. All other state and look-direction pixels remain unchanged from `v2.0.0`.
+`v2.2.0` keeps the stable `doopal` identity and v2 sprite contract. Cursor dragging now uses Doopal's approved longer, naturally stretched scruff-pickup pose, and his gaze follows the cursor direction. The session-start processing loop preserves its calm left/right head turn while matching idle head size, body scale, center, and baseline; its entry and exit frames are the exact cleaned idle frame. The seated hover yawn remains unchanged.
 
 See [the state map](docs/STATE-MAP.md) for the animation semantics and [the asset specification](docs/ASSET-SPEC.md) for the row contract.
 

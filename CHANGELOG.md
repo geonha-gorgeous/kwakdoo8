@@ -2,6 +2,20 @@
 
 All notable changes to the public Pet package are recorded here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [2.2.0] - 2026-08-22
+
+### Changed
+
+- Updated cursor dragging to Doopal's approved longer, naturally stretched scruff-pickup pose.
+- Matched Doopal's gaze to the screen-left or screen-right cursor-drag direction.
+- Preserved the calm left/right head-turn processing loop while matching the idle body and head proportions.
+
+### Fixed
+
+- Removed the apparent body and head shrink when a session changes from idle to processing.
+- Matched every active processing frame to the idle height, baseline, and center.
+- Made the processing entry and exit byte-identical to the cleaned idle frame and removed remaining chroma-edge contamination.
+
 ## [2.1.0] - 2026-08-21
 
 ### Changed
