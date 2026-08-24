@@ -2,6 +2,20 @@
 
 All notable changes to the public Pet package are recorded here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [2.3.0] - 2026-08-24
+
+### Changed
+
+- Replaced the task-processing head turn with a six-frame same-paw face-grooming loop.
+- Rebuilt the ready-for-review motion as a six-frame paw lift from the chest to the cheek and forehead.
+- Kept both revised motions on Doopal's idle anatomy, head size, body scale, center, and floor baseline.
+
+### Fixed
+
+- Made the processing paw lick and face wipe use the same screen-right paw throughout the sequence.
+- Made the review entry and exit pixel-identical to idle to remove the body-shape jump between states.
+- Preserved every row outside `running` and `review` pixel-for-pixel from `v2.2.0`.
+
 ## [2.2.0] - 2026-08-22
 
 ### Changed
