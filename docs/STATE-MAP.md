@@ -30,7 +30,11 @@ This behavior was verified against the installed desktop app build on 2026-08-21
 
 ## Processing transition
 
-At session start, the app changes from `idle` to row `running`. In `v2.2.0`, the first and last processing frames are the exact cleaned idle frame, and every active frame keeps the same `198 px` visible height, `y=202` baseline, and `x=95–96` center. The calm left/right head-turn motion remains, without the previous apparent body or head shrink.
+At session start, the app changes from `idle` to row `running`. In `v2.3.0`, the first and last processing frames are the exact cleaned idle frame. Doopal uses the screen-right paw for the full grooming sequence: paw lick, cheek wipe, forehead wipe, and return. The screen-left paw stays planted, while the head size, body scale, center, and floor baseline remain aligned with idle.
+
+## Review transition
+
+When work becomes ready for review, the app selects row `review`. In `v2.3.0`, Doopal lifts one front paw from his chest to his cheek and forehead before lowering it. The six-frame motion uses the idle anatomy and returns to an idle cell with zero pixel difference at both ends. Its visible height stays within `197-198 px`, its floor baseline within `y=201-202`, and its horizontal center within `x=94.5-96.5`.
 
 ## Drag transition
 
