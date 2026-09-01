@@ -2,6 +2,19 @@
 
 All notable changes to the public Pet package are recorded here. Versions follow [Semantic Versioning](https://semver.org/).
 
+## [2.4.0] - 2026-09-01
+
+### Changed
+
+- Rebuilt all sixteen cursor-facing poses from Doopal's idle anatomy.
+- Kept the nine standard animation rows pixel-identical to `v2.3.0`.
+
+### Fixed
+
+- Replaced side-facing poses whose head, torso, front-paw spacing, and tail differed from the idle character.
+- Locked the look-direction floor baseline and lower-body center across the clockwise loop.
+- Corrected the screen-left and screen-right gaze mapping for cursor tracking.
+
 ## [2.3.0] - 2026-08-24
 
 ### Changed

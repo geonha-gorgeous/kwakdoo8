@@ -30,6 +30,7 @@ Every released package is immutable under `versions/`. Reinstalling an older ver
 
 ```bash
 ./scripts/list-versions.sh
+./scripts/install.sh v2.4.0
 ./scripts/install.sh v2.3.0
 ./scripts/install.sh v2.2.0
 ./scripts/install.sh v2.1.0
@@ -47,7 +48,7 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 
 ## Current release
 
-- Version: `v2.3.0`
+- Version: `v2.4.0`
 - Pet ID: `doopal`
 - Display name: `Doopal`
 - Sprite contract: v2
@@ -55,9 +56,9 @@ When switching between v1 and v2, it also moves the replaced `dupal` or `doopal`
 - Cell: 192 × 208 px
 - Full spritesheet: 1536 × 2288 px
 - Format: transparent WebP
-- SHA-256: `14127e4795e12952d1fbdbf3ff4f94adf70949582fb207104b53707fc80cfe79`
+- SHA-256: `76460debdc52a18386e83e2c8fbc0dd0b2e1f22527f717490b8eb51299c8c69c`
 
-`v2.3.0` keeps the stable `doopal` identity and v2 sprite contract. Task processing now shows Doopal licking one paw and using that same paw to wipe his cheek and forehead. The ready-for-review motion lifts one front paw from his chest to his cheek and forehead before returning to idle. Both six-frame motions start and end on the exact idle frame and keep the idle head size, body scale, center, and baseline. The seated hover yawn and cursor-drag pickup remain unchanged.
+`v2.4.0` rebuilds all sixteen cursor-facing poses from Doopal's idle anatomy. The revised poses keep the idle head and body proportions, front-paw spacing, tail shape, lower-body center, and floor baseline while following the cursor across the full clockwise direction loop. All nine standard animation rows remain pixel-identical to `v2.3.0`.
 
 See [the state map](docs/STATE-MAP.md) for the animation semantics and [the asset specification](docs/ASSET-SPEC.md) for the row contract.
 
