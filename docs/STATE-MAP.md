@@ -39,3 +39,7 @@ When work becomes ready for review, the app selects row `review`. In `v2.3.0`, D
 ## Drag transition
 
 Rows `running-right` and `running-left` are selected while the Pet is dragged. In `v2.2.0`, Doopal hangs in the approved longer, naturally stretched scruff-pickup pose. His gaze matches the cursor direction: screen-right drag looks right and screen-left drag looks left. No human hand or cursor graphic is baked into the spritesheet.
+
+## Cursor-facing transition
+
+When the app provides a cursor look target, it selects one of the sixteen static cells in rows `9-10`. `v2.4.0` rebuilds this clockwise direction loop from Doopal's idle anatomy. The cells keep a shared floor baseline and lower-body center while the eyes, head, neck, and upper body follow the cursor. The four cardinal cells point up, screen right, down, and screen left at `000°`, `090°`, `180°`, and `270°`.
